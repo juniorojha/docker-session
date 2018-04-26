@@ -1,4 +1,3 @@
-# FROM ubuntu:16.04
 FROM python:2.7.14
 
 RUN pip install flask
@@ -11,7 +10,7 @@ COPY . /app
 WORKDIR /app
 
 # expose port
-EXPOSE 50001
+EXPOSE 5000
 
 # run python
 ENTRYPOINT ["python", "app.py"]
